@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS Security</title>
+    <title>SS Security – Professionel sikkerhed</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #111;
+            color: #222;
+            background-color: #f8f8f8;
+        }
+        header {
+            background: #111;
             color: white;
+            padding: 100px 20px;
             text-align: center;
         }
-
-        header {
-            padding: 80px 20px;
-            background: linear-gradient(black, #222);
-        }
-
-        h1 {
+        header h1 {
             font-size: 48px;
-            margin-bottom: 10px;
+            margin: 0;
         }
-
-        p {
-            font-size: 18px;
+        header p {
+            font-size: 20px;
+            margin: 10px 0 20px;
             max-width: 700px;
-            margin: 0 auto 20px;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background-color: gold;
-            color: black;
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
+            font-size: 16px;
             font-weight: bold;
-            border-radius: 5px;
         }
-
-        section {
+        .container {
             padding: 60px 20px;
         }
-
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         footer {
-            background-color: black;
+            background: #111;
+            color: white;
+            text-align: center;
             padding: 20px;
             font-size: 14px;
         }
@@ -52,26 +69,53 @@
 </head>
 <body>
 
+<nav>
+    <a href="#om-os">Om os</a>
+    <a href="#ydelser">Ydelser</a>
+    <a href="#kontakt">Kontakt</a>
+</nav>
+
 <header>
     <h1>SS Security</h1>
-    <p>Professionel sikkerhed og beskyttelse til events, arrangementer og personlig sikkerhed.</p>
-    <a href="#kontakt" class="btn">Kontakt os</a>
+    <p>Professionelle sikkerhedsløsninger – vi sikrer tryghed, ro og kontrol ved events, arrangementer og ved personlig beskyttelse.</p>
 </header>
 
-<section>
-    <h2>Vores ydelser</h2>
-    <p>Vi tilbyder event-sikkerhed, adgangskontrol, patruljering og professionel bodyguard-service. 
-    Vores mål er at skabe tryghed og sikre, at alt forløber sikkert og kontrolleret.</p>
+<section id="om-os" class="container">
+    <h2>Om SS Security</h2>
+    <p>SS Security tilbyder pålidelige og professionelle sikkerhedsløsninger til alle typer arrangementer. Vores erfarne teams arbejder med adgangskontrol, event-sikkerhed, overvågning og personlig beskyttelse, så du kan fokusere på det, der er vigtigt.</p>
 </section>
 
-<section id="kontakt">
+<section id="ydelser" class="container">
+    <h2>Vores ydelser</h2>
+    <div class="services">
+        <div class="service-box">
+            <h3>Event-sikkerhed</h3>
+            <p>Professionel sikkerhed og kontrol ved fester, events og større forsamlinger.</p>
+        </div>
+        <div class="service-box">
+            <h3>Adgangskontrol</h3>
+            <p>Effektiv adgangsstyring og kontrol ved indgange og områder.</p>
+        </div>
+        <div class="service-box">
+            <h3>Patruljering</h3>
+            <p>Rundering og opsyn før, under og efter dine events.</p>
+        </div>
+        <div class="service-box">
+            <h3>Bodyguard-service</h3>
+            <p>Personlig nærværende beskyttelse for dig eller dine gæster.</p>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="container">
     <h2>Kontakt os</h2>
-    <p>Email: indsæt@email.dk</p>
-    <p>Telefon: 12 34 56 78</p>
+    <p>Email: <strong>indsæt@email.dk</strong></p>
+    <p>Telefon: <strong>12 34 56 78</strong></p>
+    <p>Vi giver gerne et uforpligtende tilbud på sikkerhed til dit arrangement.</p>
 </section>
 
 <footer>
-    © 2026 SS Security – Alle rettigheder forbeholdes
+    © 2026 SS Security – Professionelle sikkerhedsløsninger
 </footer>
 
 </body>
